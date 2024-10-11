@@ -12,11 +12,21 @@
         height: 100vh;
         margin: 0;
         background-color: #f0f0f0;
+        color: #000;
       }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #333;
+          color: #fff;
+        }
+      }
+
       .octopus {
         font-size: 100px;
         animation: bounce 2s infinite;
       }
+
       @keyframes bounce {
         0% {
           transform: translateY(0);
